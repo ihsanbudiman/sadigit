@@ -1,0 +1,80 @@
+POST http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "username" : "ihsan"
+}
+
+###
+post http://localhost:5000/api/user/register
+Content-Type: application/json
+
+{
+  "username" : "admin",
+  "password" : "admin"
+}
+###
+post http://localhost:5000/api/user/login
+Content-Type: application/json
+
+{
+  "username" : "admin",
+  "password" : "admin"
+}
+###
+post http://localhost:5000/auth/login
+Content-Type: application/json
+
+{
+  "username" : "admin",
+  "password" : "admin"
+}
+
+###
+get http://localhost:5000/api/user/data
+Content-Type: application/json
+
+
+###
+POST http://localhost:5000/api/auth
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEsImxldmVsIjoiYWRtaW4iLCJsZWFkIjoiWSIsImFkZFVzZXIiOiJZIiwiZW5yb2xsIjoiWSIsImlhdCI6MTYxNDQ3MjQxOCwiZXhwIjoxNjE0NDcyNzE4fQ.DQqZZewk8KDJjyIQ8LAWwSeJ6R4kZziqy3EtK2ErVOA
+
+
+###
+POST http://localhost:5000/api/refresh
+Content-Type: application/json
+
+{
+  "refreshToken" : "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEsImxldmVsIjoiYWRtaW4iLCJsZWFkIjoiWSIsImFkZFVzZXIiOiJZIiwiZW5yb2xsIjoiWSIsImlhdCI6MTYxNDQ3NzY1NCwiZXhwIjoxNjE0NTY0MDU0fQ.3gZcE-n99Hdll6llKbmuIsf3toX6z-9eYP2MiKzcmJE"
+}
+
+
+### proses insert
+POST http://localhost:5000/api/project/proses
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEsImxldmVsIjoiYWRtaW4iLCJsZWFkIjoiWSIsImFkZFVzZXIiOiJZIiwiZW5yb2xsIjoiWSIsImlhdCI6MTYxNDYwMTA3OSwiZXhwIjoxNjE0NjA0Njc5fQ.Nt8g8PUn-BxAFol_ogfhAlfej35hZaW55wq9BXa8vO0
+
+{
+    "namaProject": "Sippadu",
+    "nominal": 12000000,
+    "namaClient": "bappenda",
+    "noHp": "081221",
+    "asalKota": "sumedang",
+    "awalPengerjaan": "2020-09-09",
+    "akhirPengerjaan": "2020-09-20",
+    "keterangan": "lead",
+    "status": "status",
+    "tanggalMasuk": "2020-09-09"
+  
+}
+
+### GetData
+Get http://localhost:5000/api/project/getData
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImFkbWluIiwiaWQiOjEsImxldmVsIjoiYWRtaW4iLCJsZWFkIjoiWSIsImFkZFVzZXIiOiJZIiwiZW5yb2xsIjoiWSIsImlhdCI6MTYxNDYwMTA3OSwiZXhwIjoxNjE0NjA0Njc5fQ.Nt8g8PUn-BxAFol_ogfhAlfej35hZaW55wq9BXa8vO0
+
+
+### GetData
+Get http://localhost:5000/api/percobaan
+Content-Type: application/json
